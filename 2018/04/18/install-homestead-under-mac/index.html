@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。">
+    <meta property="og:type" content="website">
+    <meta name="description" content="熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。">
+    <meta name="keyword"  content="熊孝兵,WispX,www.wispx.cn,亦痕,wispx,熊孝兵的博客,WispX的博客,个人博客">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Mac 下安装 Homestead - 熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+  
+  
+  
+    <script type="text/javascript">
+      var _hmt = _hmt || []
+      ;(function () {
+        var hm = document.createElement('script')
+        hm.src = 'https://hm.baidu.com/hm.js?ba44672a5593d2511890927b9d0f9a92'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    </script>
+  
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.png" />
+        </div>
+        <div class="name">
+            <i>熊孝兵</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BHomestead"><span class="toc-text">简单介绍一下Homestead</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85VirtualBox%E3%80%81Vargrant"><span class="toc-text">安装VirtualBox、Vargrant</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Homestead-Vagrant-Box"><span class="toc-text">安装 Homestead Vagrant Box</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Homestead"><span class="toc-text">安装 Homestead</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91-x2F-etc-x2F-hosts-%E6%96%87%E4%BB%B6"><span class="toc-text">编辑 &#x2F;etc&#x2F;hosts 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">启动虚拟机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH-%E7%99%BB%E5%85%A5%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">SSH 登入虚拟机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE"><span class="toc-text">部署项目</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Mac 下安装 Homestead
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018/04/18 01:13:00</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#技术" title="技术">技术</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <p>闲起来又开始爬坑了，有坑往里钻，有问题就慢慢扒，不得不说越来越喜欢这感觉了，感觉时间根本不够用。</p>
+<p>官方的教程果然都是有坑的，让人头皮发麻。</p>
+<p>本篇文章只是搭建Homestead教程，就不详细的介绍遇到的问题了。</p>
+<p>注意：本篇文章只针对mac用户，windows请移步其他教程。</p>
+<h3 id="简单介绍一下Homestead"><a href="#简单介绍一下Homestead" class="headerlink" title="简单介绍一下Homestead"></a>简单介绍一下Homestead</h3><p>Homestead是laravel为开发者提供的重量级本地开发环境。</p>
+<blockquote>
+<p>Laravel Homestead 实际是一个打包好各种 Laravel 开发所需软件和工具的 Vagrant 盒子（关于 Vagrant 盒子的释义请参考 Vagrant 官方文档），该盒子为我们提供了一个优秀的开发环境，有了它，我们不再需要在本地环境安装 PHP、Composer、Nginx、MySQL、Memcached、Redis、Node 等其它工具软件，我们也完全不用再担心误操作搞乱操作系统 —— 因为 Vagrant 盒子是一次性的，如果出现错误，可以在数分钟内销毁并重新创建该 Vagrant 盒子！</p>
+</blockquote>
+<h3 id="安装VirtualBox、Vargrant"><a href="#安装VirtualBox、Vargrant" class="headerlink" title="安装VirtualBox、Vargrant"></a>安装VirtualBox、Vargrant</h3><p>VirtualBox5.2.10 下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+<p>Vargrant 下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.vagrantup.com/downloads.html">https://www.vagrantup.com/downloads.html</a></p>
+<p>验证是否安装成功在终端使用以下命令行，显示版本信息就可以了<br></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant -v</span><br></pre></td></tr></table></figure>
+
+<p>除了VirtualBox你还可以选择<a target="_blank" rel="noopener" href="https://www.vmware.com/" title="VMWare">VMWare</a>、<a target="_blank" rel="noopener" href="http://www.parallels.com/products/desktop/" title="Parallels">Parallels</a> 或 <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v" title="Hyper-V">Hyper-V</a>，不过这三个都是收费的，本篇教程将使用VirtualBox5.2.10。</p>
+<h3 id="安装-Homestead-Vagrant-Box"><a href="#安装-Homestead-Vagrant-Box" class="headerlink" title="安装 Homestead Vagrant Box"></a>安装 Homestead Vagrant Box</h3><p>输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant box add laravel/homestead</span><br></pre></td></tr></table></figure>
+<p>执行后会提示你选择盒子（这里我选择了virtualbox），输入序号3，回车即可。<br>如图：</p>
+<img width='100%' src='https://i.loli.net/2018/04/18/5ad7365451eba.png'>
+
+
+<p>下载可能较慢，太慢请挂vpn。</p>
+<h3 id="安装-Homestead"><a href="#安装-Homestead" class="headerlink" title="安装 Homestead"></a>安装 Homestead</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到用户文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="comment"># 克隆homestead项目 到 Homestead 文件夹</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/laravel/homestead.git Homestead</span><br></pre></td></tr></table></figure>
+<p>git 项目克隆完成后，切换到 Homestead 文件夹，创建相关配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到Homestead目录</span></span><br><span class="line"><span class="built_in">cd</span> ~/Homestead</span><br><span class="line"><span class="comment"># 执行初始化</span></span><br><span class="line">bash init.sh</span><br></pre></td></tr></table></figure>
+<p>走完上面步骤后 Homestead 文件夹里会出现一个 Homesstead.yaml 配置文件。这个文件可以配置 mac 与虚拟机的共享文件夹、Nginx 站点、数据库等等、虚拟机使用 cpu 数、内存等等。 现在我们的目的是先安装并运行 Laravel 就行了，先使用其预设值即可，先不进行修改。但是我们需要根据其预设值对 mac 进行一些操作。<br>继续往下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到用户目录</span></span><br><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="comment"># 创建文件夹</span></span><br><span class="line"><span class="built_in">mkdir</span> -p code/laravel</span><br></pre></td></tr></table></figure>
+<h3 id="编辑-x2F-etc-x2F-hosts-文件"><a href="#编辑-x2F-etc-x2F-hosts-文件" class="headerlink" title="编辑 &#x2F;etc&#x2F;hosts 文件"></a>编辑 &#x2F;etc&#x2F;hosts 文件</h3><p>我们打开Homestead.yaml文件，看一看 ip 和 sites 两项：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ip: <span class="string">&quot;192.168.10.10&quot;</span></span><br><span class="line">......</span><br><span class="line">sites:</span><br><span class="line">    - map: homestead.test</span><br><span class="line">      to: /home/vagrant/code/public</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<p>ip 是指 Homestead 的 ip，sites 则是指定域名去对应虚拟机的文件目录。记住这两个值，相应的去 &#x2F;etc&#x2F;hosts 文件最后添加如以下格式内容即可。mac修改hosts文件请自行百度</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">192.168.10.10 	homestead.test</span><br></pre></td></tr></table></figure>
+<h3 id="启动虚拟机"><a href="#启动虚拟机" class="headerlink" title="启动虚拟机"></a>启动虚拟机</h3><p>在mac命令行中输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Homestead</span><br></pre></td></tr></table></figure>
+<p>切换到homestead项目所在到目录，然后输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant up</span><br></pre></td></tr></table></figure>
+<p>中途可能会出现错误：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Check your Homestead.yaml file, the path to your private key does not exist.</span><br></pre></td></tr></table></figure>
+<p>解决方法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span><br><span class="line">ssh-add -K ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+<h3 id="SSH-登入虚拟机"><a href="#SSH-登入虚拟机" class="headerlink" title="SSH 登入虚拟机"></a>SSH 登入虚拟机</h3><p>启动成功之后，输入<code>vagrant ssh</code> 登陆到 vagrant 虚拟机，如图:</p>
+<img width='100%' src='https://i.loli.net/2018/04/18/5ad73e65451dc.png'>
+
+<h3 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h3><p>这里以安装laravel为例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> code</span><br><span class="line">composer create-project laravel/laravel Laravel --prefer-dist</span><br></pre></td></tr></table></figure>
+<p>安装成功后修改Homestead.yaml文件，将：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sites:</span><br><span class="line">    - map: homestead.test</span><br><span class="line">      to: /home/vagrant/code/public</span><br></pre></td></tr></table></figure>
+<p>修改为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sites:</span><br><span class="line">    - map: homestead.test</span><br><span class="line">      to: /home/vagrant/code/laravel/public</span><br></pre></td></tr></table></figure>
+<p>然后：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Homestead</span><br><span class="line">vagrant provision</span><br></pre></td></tr></table></figure>
+
+<p>大功告成，浏览器输入<code>http://homestead.test</code>，出现以下页面。</p>
+<img width='100%' src='https://i.loli.net/2018/04/18/5ad7436237fb4.png'>
+
+<p>到这里homestead环境已经基本搭建完成了，其中更多问题作者还正在继续爬坑。。</p>
+<p>原创文章，转载请注明出处~</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/wisp-x">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="/friends">友情链接</a></span>
+        <span>/</span>
+        
+        <span><a href="/licence">博客声明</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn">皖ICP备16011445号</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="wisp-x/blog"
+    data-repo-id="R_kgDOJRmIFg"
+    data-category="Comments"
+    data-category-id="DIC_kwDOJRmIFs4CVeQV"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>

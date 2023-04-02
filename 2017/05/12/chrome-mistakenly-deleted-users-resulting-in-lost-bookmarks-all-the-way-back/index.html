@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。">
+    <meta property="og:type" content="website">
+    <meta name="description" content="熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。">
+    <meta name="keyword"  content="熊孝兵,WispX,www.wispx.cn,亦痕,wispx,熊孝兵的博客,WispX的博客,个人博客">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Chrome误删用户，导致书签全部丢失找回的方法。 - 熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+  
+  
+  
+    <script type="text/javascript">
+      var _hmt = _hmt || []
+      ;(function () {
+        var hm = document.createElement('script')
+        hm.src = 'https://hm.baidu.com/hm.js?ba44672a5593d2511890927b9d0f9a92'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    </script>
+  
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.png" />
+        </div>
+        <div class="name">
+            <i>熊孝兵</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Chrome误删用户，导致书签全部丢失找回的方法。
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2017/05/12 00:01:00</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#技术" title="技术">技术</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <p>今天在使用Google Chrome的过程中，重新登录账户结果手贱误删了以前已登录的账户，百度了一下，大部分说的恢复方法是在路径：</p>
+<p><code>C:\Users\Administrator\AppData\Local\Google\Chrome\User Data\</code></p>
+<p>下找到bookmarks文件并将它改名为bookmarks.bak<br>但是chrome经过这么多版本的懈怠后，现在删除用户后这个文件夹已经找不到这个文件了，想恢复数据只能恢复这个文件。<br>最终我在百度找到了解决办法：</p>
+<blockquote>
+<p>1、快捷键 Win+R 输入 Chrome 的用户数据路径：Windows XP:%USERPROFILE%\Local Settings\ApplicationData\Google\Chrome\UserData\Default\Vista&#x2F;Win7&#x2F;Win8:%LOCALAPPDATA%\Google\Chrome\User Data\Default\</p>
+</blockquote>
+<blockquote>
+<p>2、打开Chrome的用户数据目录就会看见  Bookmarks 和 Bookmarks.bak ,当前书签 和 书签的备份文件，这时候把 Bookmarks 用txt打开。就能看到。</p>
+</blockquote>
+<p>作者：sin<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/43177577/answer/141922408">https://www.zhihu.com/question/43177577/answer/141922408</a><br>来源：知乎</p>
+<p>执行以上命令后，重启chrome就能看到以前的书签了。</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/wisp-x">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="/friends">友情链接</a></span>
+        <span>/</span>
+        
+        <span><a href="/licence">博客声明</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn">皖ICP备16011445号</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="wisp-x/blog"
+    data-repo-id="R_kgDOJRmIFg"
+    data-category="Comments"
+    data-category-id="DIC_kwDOJRmIFs4CVeQV"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
