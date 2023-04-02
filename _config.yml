@@ -124,7 +124,7 @@ linkedin_username:
 anchorjs: true
 
 # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-avatar: img/avatar.png
+sidebar-avatar: /gravatar.loli.net/avatar/7a585313ed855e8d652cbb3154a6056e?s=300&d=mm&r=g
 
 # Friends
 # 友情链接
@@ -190,3 +190,7 @@ search:
 # 文章样式(是否首行缩进)：
 post_style:
   indent: 0
+
+# 头像圆角
+avatar_style:
+  radius: true
