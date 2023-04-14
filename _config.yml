@@ -193,4 +193,4 @@ post_style:
 
 # 头像圆角
 avatar_style:
-  radius: true
+  radius: false

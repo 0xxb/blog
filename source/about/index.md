@@ -2,7 +2,7 @@
 layout: about
 title: 关于
 date: 2023-03-31 15:46:07
-comments: true
+comments: false
 ---
 
 我的名字叫熊孝兵，95后，出生于安徽省的一个偏远小城市。起初我是一名 PHP 开发者，后来什么都干。
