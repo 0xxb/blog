@@ -700,11 +700,10 @@ body {
   border-radius: 4px;
 }
 .post-content blockquote {
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  margin-left: 2em;
+  border-left: 4px solid #cccccc;
+  margin-left: 2px;
+  padding-left: 1em;
   margin-right: 2em;
-  padding-left: 0;
   padding-right: 0;
 }
 .post-content blockquote p {
