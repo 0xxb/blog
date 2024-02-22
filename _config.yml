@@ -138,6 +138,9 @@ friends: [
   },{
     title: "皖ICP备16011445号",
     href: "https://beian.miit.gov.cn"
+  },{
+    title: "RSS",
+    href: "/feed.xml"
   }
 ]
 
@@ -194,3 +197,15 @@ post_style:
 # 头像圆角
 avatar_style:
   radius: false
+
+# rss
+feed:
+  enable: true
+  type: atom
+  path: feed.xml
+  limit: 20
+  hub:
+  content: true
+  order_by: -date
+  autodiscovery: true
+  template:
