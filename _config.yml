@@ -130,6 +130,9 @@ sidebar-avatar: /gravatar.loli.net/avatar/7a585313ed855e8d652cbb3154a6056e?s=300
 # 友情链接
 friends: [
   {
+    title: "RSS",
+    href: "/feed.xml"
+  },{
     title: "友情链接",
     href: "/friends"
   },{
@@ -138,9 +141,6 @@ friends: [
   },{
     title: "皖ICP备16011445号",
     href: "https://beian.miit.gov.cn"
-  },{
-    title: "RSS",
-    href: "/feed.xml"
   }
 ]
 
