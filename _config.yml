@@ -130,6 +130,9 @@ sidebar-avatar: /gravatar.loli.net/avatar/7a585313ed855e8d652cbb3154a6056e?s=300
 # 友情链接
 friends: [
   {
+    title: "RSS",
+    href: "/feed.xml"
+  },{
     title: "友情链接",
     href: "/friends"
   },{
@@ -194,3 +197,16 @@ post_style:
 # 头像圆角
 avatar_style:
   radius: false
+
+# rss
+feed:
+  enable: true
+  type: atom
+  path: feed.xml
+  limit: 20
+  hub:
+  content: true
+  order_by: -date
+  icon: https://gravatar.loli.net/avatar/7a585313ed855e8d652cbb3154a6056e?s=300
+  autodiscovery: true
+  template:
