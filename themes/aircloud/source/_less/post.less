@@ -42,7 +42,7 @@
   letter-spacing: 1px;
   word-break: break-all;
   &:hover {
-    background-color: rgba(51,112,255,0.1);
+    // background-color: rgba(51,112,255,0.1);
   }
 }
 
@@ -55,12 +55,14 @@
   font-weight: 300;
   >table, >table tr th, >table tr td { border:1px solid #e7e8e9; }
   table { border-collapse: collapse;}
+  img {
+    border-radius: 4px;
+  }
   blockquote{
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    margin-left: 2em;
+    border-left: 4px solid #cccccc;
+    margin-left: 2px;
+    padding-left: 1em;
     margin-right: 2em;
-    padding-left: 0;
     padding-right: 0;
     p {
       margin-top: 10px;
@@ -77,7 +79,7 @@
     text-indent: 2em;
     .article-content();
     img {
-      width: 80%
+      width: 100%
     }
   }
   ul,ol{
