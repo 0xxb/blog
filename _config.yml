@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://wispx.cn
+url: https://xxb.im
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -108,7 +108,7 @@ deploy:
 # 网站综合内容设置：
 SEOTitle: 熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。
 email: i@wispx.cn
-keyword: "熊孝兵,WispX,www.wispx.cn,亦痕,wispx,熊孝兵的博客,WispX的博客,个人博客"
+keyword: "熊孝兵,熊孝兵的博客,个人博客,熊孝兵的个人博客"
 
 # SNS settings
 # 一些社交平台地址，支持以下几种：
@@ -147,7 +147,7 @@ friends: [
 analytics:
   baidu:
     # https://tongji.baidu.com
-    id: ba44672a5593d2511890927b9d0f9a92
+    id: 0a04184bc340084aa72e26532daf8c4b
     # https://ziyuan.baidu.com/college/courseinfo?id=156&page=4#h2_article_title1
     disable_transformation: false
 
