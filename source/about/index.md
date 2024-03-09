@@ -14,7 +14,7 @@ comments: false
 再后来，我有了一个新的梦想，希望自己内心强大。
 
 # 🔗 我创建的网站
-- 博客 [https://wispx.cn](https://wispx.cn)
+- 博客 [https://xxb.im](https://xxb.im)
 - 图床 [https://www.lsky.pro](https://www.lsky.pro)
 - 相册 [https://photograph.lsky.pro](https://photograph.lsky.pro)
 
