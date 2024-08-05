@@ -19,4 +19,4 @@ comments: true
 
 在接触了摄影这么久以后，给我最大的感触就是：摄影应该是一种生活态度，它应该是简单的，纯粹的。我们应该珍惜每一个按下快门的瞬间，去注重照片的内容而不是纸面参数。照片的故事感一定是比技巧、形式更为重要，而构图，仅仅是锦上添花。
 
-我的摄影集：[https://photograph.lsky.pro](https://photograph.lsky.pro)
+我的摄影集：[https://photograph.xxb.im](https://photograph.xxb.im)

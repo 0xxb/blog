@@ -16,7 +16,7 @@ comments: false
 # 🔗 我创建的网站
 - 博客 [https://xxb.im](https://xxb.im)
 - 图床 [https://www.lsky.pro](https://www.lsky.pro)
-- 相册 [https://photograph.lsky.pro](https://photograph.lsky.pro)
+- 相册 [https://photograph.xxb.im](https://photograph.xxb.im)
 
 # 🎧 喜欢的音乐
 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="500" style="width:100%;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/pl.u-BNA6YjJT1g5Bgm5"></iframe>
