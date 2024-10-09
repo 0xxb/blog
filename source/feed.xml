@@ -15,7 +15,10 @@
     </author>
     {% endif %}
     <generator uri="https://hexo.io/">Hexo</generator>
-    <description>feedId:66745671895949312+userId:66705720258441216</description>
+    <follow_challenge>
+        <feedId>66745671895949312</feedId>
+        <userId>66705720258441216</userId>
+    </follow_challenge>
     {% for post in posts.toArray() %}
     <entry>
         <title>{{ post.title }}</title>
