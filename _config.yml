@@ -199,7 +199,7 @@ avatar_style:
 feed:
   enable: true
   type: atom
-  path: rss.xml
+  path: feed.xml
   limit: false
   hub:
   content: true
