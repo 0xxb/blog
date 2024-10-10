@@ -5,7 +5,7 @@
 # Site
 title: 熊孝兵的博客
 subtitle: '不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。'
-description: '熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。'
+description: '熊孝兵记录生活的个人博客'
 keywords: 熊孝兵,WispX,www.wispx.cn,亦痕,wispx,熊孝兵的博客,WispX的博客,个人博客
 author: 熊孝兵
 language: zh
@@ -106,8 +106,8 @@ deploy:
 
 # Site settings
 # 网站综合内容设置：
-SEOTitle: 熊孝兵的博客 - 〆我在纯白的世界里做着有关救赎的梦。
-email: i@wispx.cn
+SEOTitle: 熊孝兵的博客
+email: wisp-x@qq.com
 keyword: "熊孝兵,熊孝兵的博客,个人博客,熊孝兵的个人博客"
 
 # SNS settings
