@@ -10,7 +10,7 @@ comments: true
 此次重构是个大翻新，后端框架使用ThinkPHP5.1，前端使用Jquery、Mdui等。
 
 <p align="center">
-    <img width="300" src="https://raw.githubusercontent.com/wisp-x/lsky-pro/master/public/static/app/images/logo.png">
+    <img width="300" src="https://raw.githubusercontent.com/0xxb/lsky-pro/master/public/static/app/images/logo.png">
 </p>
 
 # Lsky Pro - Your photo album on the cloud.
@@ -18,17 +18,17 @@ comments: true
 [官网](https://www.lsky.pro)
 [手册](https://www.kancloud.cn/wispx/lsky-pro)
 
-[![License](https://img.shields.io/badge/license-GPL_V3.0-yellowgreen.svg)](https://github.com/wisp-x/lsky-pro/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-GPL_V3.0-yellowgreen.svg)](https://github.com/0xxb/lsky-pro/blob/master/LICENSE)
 [![PHP](https://img.shields.io/badge/PHP->=5.6-orange.svg)](http://php.net)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wisp-x/lsky-pro.svg)](https://github.com/wisp-x/lsky-pro)
-[![Join the chat at https://gitter.im/wisp-x/lsky-pro](https://badges.gitter.im/wisp-x/lsky-pro.svg)](https://gitter.im/wisp-x/lsky-pro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge&style=flat-square)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/0xxb/lsky-pro.svg)](https://github.com/0xxb/lsky-pro)
+[![Join the chat at https://gitter.im/0xxb/lsky-pro](https://badges.gitter.im/0xxb/lsky-pro.svg)](https://gitter.im/0xxb/lsky-pro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge&style=flat-square)
 
-> master分支为最新版，其他版本请点击[这里](https://github.com/wisp-x/lsky-pro/releases)
+> master分支为最新版，其他版本请点击[这里](https://github.com/0xxb/lsky-pro/releases)
 
-> 发现bug可发送邮件至邮箱：i@wispx.cn，或提交[issues](https://github.com/wisp-x/lsky-pro/issues)，确认bug后我会及时修复，谢谢！
+> 发现bug可发送邮件至邮箱：i@wispx.cn，或提交[issues](https://github.com/0xxb/lsky-pro/issues)，确认bug后我会及时修复，谢谢！
 
-![homepage.png](https://github.com/wisp-x/lsky-pro/raw/master/public/static/app/images/demo/1.png)
-![homepage.png](https://github.com/wisp-x/lsky-pro/raw/master/public/static/app/images/demo/2.png)
+![homepage.png](https://github.com/0xxb/lsky-pro/raw/master/public/static/app/images/demo/1.png)
+![homepage.png](https://github.com/0xxb/lsky-pro/raw/master/public/static/app/images/demo/2.png)
 
 主要特性
 ---
@@ -75,7 +75,7 @@ comments: true
 如何更新到最新版？
 ---
 升级过程并不复杂，但也简单粗暴，总共分为四个步骤。
-1. [下载](https://github.com/wisp-x/lsky-pro/releases)最新版程序并解压到本地。
+1. [下载](https://github.com/0xxb/lsky-pro/releases)最新版程序并解压到本地。
 2. 将旧版程序 ```config/db.php``` 文件复制到新版程序的 ```config``` 文件夹，如果你使用的是本地储存策略，文件是储存在本地的，请注意也要将你旧版本的图片资源移动到新程序对应的目录。
 3. 删除旧版本程序所有文件，上传最新版程序到站点根目录即可(这一步也可以直接覆盖，但会有残留文件，不选择覆盖的话建议先打包备份旧版本)。
 4. 使用管理员账号登录，访问任意页面会跳转到升级数据库结构页面，根据提示操作即可。

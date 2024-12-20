@@ -6,7 +6,7 @@
 title: 熊孝兵的博客
 subtitle: '不妄自菲薄，不矫枉过正，不随波逐流，不固步自封。'
 description: '熊孝兵记录生活的个人博客'
-keywords: 熊孝兵,WispX,www.wispx.cn,亦痕,wispx,熊孝兵的博客,WispX的博客,个人博客
+keywords: 熊孝兵,熊孝兵的博客,博客,个人博客
 author: 熊孝兵
 language: zh
 timezone: 'Asia/Shanghai'
@@ -107,14 +107,14 @@ deploy:
 # Site settings
 # 网站综合内容设置：
 SEOTitle: 熊孝兵的博客
-email: wisp-x@qq.com
+email: hi@xxb.im
 keyword: "熊孝兵,熊孝兵的博客,个人博客,熊孝兵的个人博客"
 
 # SNS settings
 # 一些社交平台地址，支持以下几种：
 weibo_username:
 zhihu_username:
-github_username: wisp-x
+github_username: 0xxb
 twitter_username:
 facebook_username:
 linkedin_username:
@@ -152,7 +152,7 @@ comment:
   type: giscus
   script: |
     <script src="https://giscus.app/client.js"
-        data-repo="wisp-x/blog"
+        data-repo="0xxb/blog"
         data-repo-id="R_kgDOJRoVtA"
         data-category="Comments"
         data-category-id="DIC_kwDOJRoVtM4CVeWe"

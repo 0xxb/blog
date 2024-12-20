@@ -24,4 +24,4 @@ comments: false
 
 # 📧 联系我
 - Telegram：[@AlanXb](https://t.me/AlanXb)
-- 邮箱：<a href="mailto:wisp-x@qq.com">wisp-x@qq.com</a></li>
+- 邮箱：<a href="mailto:hi@xxb.im">hi@xxb.im</a></li>
