@@ -13,7 +13,6 @@ comments: false
 # 博客
 - [LINKSPHOTOGRAPH](https://www.linksphotograph.com)
 - [Randy's Blog](https://lutaonan.com)
+- [Airing 的博客](https://blog.ursb.me)
 - [读来依然摄影博客](https://wind.ink)
-- [九十九封信](https://blog.99xin.me)
-- [锦的个人主页](https://kam.zone)
-- [王北洛写字的地方](https://www.beiluowang.com)
+- [Innei](https://innei.in)
