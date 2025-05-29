@@ -16,4 +16,4 @@ comments: false
 - [完美的胖达](https://wmdpd.com)
 - [YUOO](https://www.yuoo.cn)
 - [叶开楗博客](http://qq.md)
-- [雨忆江南](https://yyjn.org)
+- [呢喃](https://ninan.me)
