@@ -5,7 +5,7 @@ date: 2023-03-31 15:46:07
 comments: false
 ---
 
-我的名字叫熊孝兵，95后，～～积极虚无主义～～存在主义者，出生于安徽省的一个偏远小城市。起初我是一名 PHP 开发者，后来什么都做。
+我的名字叫熊孝兵，95后，~~积极虚无主义~~存在主义者，出生于安徽省的一个偏远小城市。起初我是一名 PHP 开发者，后来什么都做。
 
 爱好摄影、编程、听音乐、看电影、钓鱼、玩游戏。我对开放世界类游戏情有独钟，比如 [塞尔达传说: 旷野之息](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild)和[塞尔达传说：王国之泪](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom)，从旷野之息开始已经断断续续玩了好几年了，但是我至今没有去救公主。
 
