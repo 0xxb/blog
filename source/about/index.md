@@ -16,7 +16,7 @@ comments: false
 # 🔗 我创建的网站
 - 博客 [https://xxb.im](https://xxb.im)
 - 图床 [https://www.lsky.pro](https://www.lsky.pro)
-- 相册 [https://photograph.xxb.im](https://photograph.xxb.im)
+- 摄影 [https://gallery.xxb.im](https://gallery.xxb.im)
 - Spark Studio [https://huohuastudio.com](https://huohuastudio.com)
 
 # 🎧 喜欢的音乐
